@@ -3,10 +3,18 @@
 This is a rebuild of https://github.com/jpetazzo/dockvpn that works with new version of OpenVPN iOS app (with updated OpenSSL usage)
 
 
-How to use it. Step with `DOCKER_DEFAULT_PLATFORM` is optional and it helped me to force required platform at Digital Ocean droplet.
+How to use it. 
+
+Step with `DOCKER_DEFAULT_PLATFORM` is optional and it helped me to force required platform at Digital Ocean droplet.
+
+
 Once you run all command you will see some address like https://1.1.1.1:8080/
+
+
 You need to open it and download .ovpn config file.
-To fix issue for new iOS version you need to open .ovpn file and remove `<dh>``</dh>` section fully
+
+
+To fix issue for new iOS version you need to open .ovpn file and remove `<dh>` `</dh>` section fully
 ```
 apt-get update && apt-get install
 apt install -y docker
