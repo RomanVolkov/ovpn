@@ -17,6 +17,13 @@ You need to open it and download .ovpn config file.
 To fix issue for new iOS version you need to open .ovpn file and remove `<dh>` `</dh>` section fully
 
 If you prefer to build you own image from it just replace `romanvolkov/vpn` with your docker hub image id. 
+
+How to build:
+
+`docker buildx build --platform linux/arm64 -t <tag>`
+`docker buildx build --platform linux/amd64 -t <tag>`
+`docker buildx build --platform linux/arm/v7 -t <tag>`
+
 ```
 apt-get update && apt-get install
 apt install -y docker
