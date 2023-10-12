@@ -37,5 +37,6 @@ apt install -y docker
 apt install -y docker.io
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
 CID=$(docker run -d --privileged -p 1194:1194/udp -p 443:443/tcp romanvolkov/vpn)
+docker run -t -i -p 8080:8080 --volumes-from $CID romanvolkov/vpn
 docker run -t -i -p 8080:8080 --volumes-from $CID romanvolkov/vpn serveconfig
 ```
