@@ -21,8 +21,15 @@ If you prefer to build you own image from it just replace `romanvolkov/vpn` with
 How to build:
 
 `docker buildx build --platform linux/arm64 -t <tag>`
+
+
 `docker buildx build --platform linux/amd64 -t <tag>`
+
+
 `docker buildx build --platform linux/arm/v7 -t <tag>`
+
+
+then replace `romanvolkov/vpn` with your `<tag>` 
 
 ```
 apt-get update && apt-get install
